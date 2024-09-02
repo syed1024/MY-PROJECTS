@@ -1,1 +1,5 @@
 # MY-PROJECTS
+Calculator Project: This Java project involves creating a simple yet functional calculator that can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The user interacts with the calculator through a graphical user interface (GUI) or command-line interface (CLI), inputting numbers and selecting operations. The program processes these inputs and displays the result. Advanced versions may include features like handling of parentheses, square roots, and more complex mathematical functions.
+
+To-Do List Project: The to-do list application in Java helps users manage their tasks efficiently. This project typically includes features such as adding, deleting, and updating tasks, as well as marking tasks as completed. The application can be implemented with a GUI for ease of use, utilizing Java Swing or JavaFX. Data can be stored in-memory during runtime or persistently using file I/O or databases. Users can organize tasks by categories, set deadlines, and prioritize their workload, providing a structured approach to task management.
+
