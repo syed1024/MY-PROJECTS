@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container"><br><br><br>
+        <h1><u>To-Do-List<u></h1>
+
+            <input type="text" id="taskInput" placeholder="Add a new task">&nbsp&nbsp&nbsp&nbsp&nbsp
+            <button id onclick="add()"="addTaskButton">Add New Task</button>
+        <ul id="taskList"></ul>
+        
+    </div>
+    <script> 
+
+  const taskInput=document.getElementById('taskInput');  
+    const addTaskButton=document.getElementById('addTaskButton');
+    const taskList=document.getElementById('taskList');
+    function add()
+    {
+let elm = document.createElement("li");
+
+// Set the inner HTML of the list item
+elm.innerHTML = taskInput.value;
+
+// Append the new list item to the task list
+taskList.appendChild(elm);
+let span = document.createElement("span");
+span.innerHTML = "\u00d7";
+ elm.appendChild(span);
+taskInput.value="";
+}
+let x=document.getElementById('taskInput');
+x.addEventListener('focus',myfocusfunction);
+function myfocusfunction()
+{
+    x.style.background="yellow";
+}
+taskList.addEventListener('click', function(e) {
+            if (e.target.tagName === "SPAN") {
+                e.target.parentElement.remove();
+                parentElement.style.cursor = "pointer";
+            }
+        });
+
+
+</script>
+</body>
+</html>
+
+
+   
